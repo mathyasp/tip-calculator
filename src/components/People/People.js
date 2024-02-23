@@ -1,8 +1,6 @@
-import { useState } from 'react';
+import './People.css';
 
-function People() {
-  const [people, setPeople] = useState(1);
-
+function People({ people, setPeople }) {
   const handlePeopleChange = (e) => {
     setPeople(e.target.value);
   };

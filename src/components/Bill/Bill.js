@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import './Bill.css';
 
-function Bill() {
-  const [bill, setBill] = useState('');
+function Bill({ bill, setBill }) {
 
   const handleBillChange = (e) => {
     setBill(e.target.value);
@@ -13,7 +12,7 @@ function Bill() {
       <form>
         <input
           value={bill}
-          placeholder="0.00"
+          placeholder={bill}
           onChange={handleBillChange}
         />
       </form>

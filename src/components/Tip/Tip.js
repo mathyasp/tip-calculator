@@ -1,8 +1,6 @@
-import { useState } from 'react';
+import './Tip.css';
 
-function Tip() {
-  const [tip, setTip] = useState(15);
-
+function Tip({ tip, setTip }) {
   const handleBillChange = (e) => {
     setTip(e.target.value);
   };
